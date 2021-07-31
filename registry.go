@@ -18,7 +18,7 @@ const (
 
 // RegistryService is an interface for interfacing with the Registry endpoints
 // of the DigitalOcean API.
-// See: https://docs.digitalocean.com/reference/api/api-reference/#tag/Container-Registry
+// See: https://developers.digitalocean.com/documentation/v2#registry
 type RegistryService interface {
 	Create(context.Context, *RegistryCreateRequest) (*Registry, *Response, error)
 	Get(context.Context) (*Registry, *Response, error)

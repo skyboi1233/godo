@@ -8,7 +8,7 @@ import (
 
 // ImageActionsService is an interface for interfacing with the image actions
 // endpoints of the DigitalOcean API
-// See: https://docs.digitalocean.com/reference/api/api-reference/#tag/Image-Actions
+// See: https://developers.digitalocean.com/documentation/v2#image-actions
 type ImageActionsService interface {
 	Get(context.Context, int, int) (*Action, *Response, error)
 	Transfer(context.Context, int, *ActionRequest) (*Action, *Response, error)
